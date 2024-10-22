@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DiceCode : MonoBehaviour
 {
-    public bool Clicked = false;
-    int roll;
 
-    RaycastHit raycastHit;
-    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    int rollOne;
+    int rollTwo;
+    int sum;
+    int bet;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,45 +22,49 @@ public class DiceCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MouseClickCodeLeft();
+        OnMouseDown();
+        //MouseClickCodeLeft();
 
 
     }
 
     public void MouseClickCodeLeft()
     {
-        //Left Click
-        if (Input.GetMouseButtonDown(0))
-        {
-            Clicked = true;
-            if (Clicked == true)
+        //int sum = rollOne + rollTwo;
+
+        for (int i = 0; i == 1; i++) { }
             {
-                Clicked = false;
-                roll = (int)Random.Range(1f, 7f);
-                Debug.Log(roll);
+                rollOne = (int)Random.Range(1f, 7f);
+                rollTwo = (int)Random.Range(1f, 7f);
+                Debug.Log("The Sum is " + sum);
+                gameLogic();
             }
             //Debug.Log("Mouse 0 - Left Click");
-
-
-                if (Physics.Raycast(ray, out raycastHit, 100f))
-                {
-                    if (raycastHit.transform != null)
-                    {
-                        //Our custom method. 
-                        CurrentClickedGameObject(raycastHit.transform.gameObject);
-                    }
-                }
-        }
     }
-    public void CurrentClickedGameObject(GameObject gameObject)
+    public void gameLogic()
     {
-        if (gameObject.tag == "Dice")
+        sum = rollOne + rollTwo;
+        if (sum < bet)
         {
-            Debug.Log("Dice Clicked");
+            Debug.Log("Bet Lost");
         }
-
+        else if (sum > bet)
+        {
+            Debug.Log("Bet Won");
+        }
     }
-    public void MouseClickCodeRight()
+   
+    void OnMouseDown()
+    {
+        //Left Click
+        if (gameObject.tag == "Dice" && Input.GetMouseButtonDown(0))
+        {
+            MouseClickCodeLeft();
+
+        }
+    }
+
+        public void MouseClickCodeRight()
     {
         //Right Click
         if (Input.GetMouseButtonDown(1))
