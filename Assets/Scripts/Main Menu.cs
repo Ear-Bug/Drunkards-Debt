@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        onButtonClicked();
+
     }
 
     // Click the "Instantiate!" button and a new `prefab` will be instantiated
@@ -26,15 +26,6 @@ public class MainMenu : MonoBehaviour
         {
             var position = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
             Instantiate(prefab, position, Quaternion.identity);
-        }
-    }
-    private void onButtonClicked()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Debug.Log("Button Clicked");
-
-            //gameObject.SetActive(false);
         }
     }
 }

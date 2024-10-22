@@ -7,7 +7,7 @@ public class MouseInputs : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         //Left Click
         if(Input.GetMouseButtonDown(0))
         {
@@ -25,6 +25,6 @@ public class MouseInputs : MonoBehaviour
         {
             Debug.Log("Mouse 2 - Middle Mouse Click");
 
-        }
+        }*/
     }
 }
