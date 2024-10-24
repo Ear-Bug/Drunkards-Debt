@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class Balance : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public int money = 50;
-    public Text showBalance;
+    Public Text moneyText
+    public float money;
 
-    void Start() {
-       showBalance.text = money.ToString();
+    void Update() {
+       moneyText.text = money.ToString();
     }
 }
