@@ -14,12 +14,13 @@ public class NewDiceCode : MonoBehaviour
     int rollOne;
     private void Start()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
+        //this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
+        
     }
     void Update()
     {
 
-
+        
 
     }
     public void DiceRoll()
@@ -27,37 +28,66 @@ public class NewDiceCode : MonoBehaviour
         
         rollOne = (int)UnityEngine.Random.Range(1f, 7f);
         Debug.Log("rollOne is: " + rollOne);
-        
+
+        if (gameObject.tag == "Cup")
+        {
+            transform.position = new Vector3(0, 0, 0);
+            Debug.Log("Cup is called");
+        }
 
         switch (rollOne)
         {
             case 1:
             {
-                gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_0;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_0;
+                    }
+                Debug.Log("DiceRollFilledIn_0");    
             } break;
             case 2:
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_1;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_1;
+                    }
+                    Debug.Log("DiceRollFilledIn_1");
                 }
                 break;
             case 3:
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_2;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_2;
+                    }
+                    Debug.Log("DiceRollFilledIn_2");
                 }
                 break;
             case 4:
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
+                    }
+                    Debug.Log("DiceRollFilledIn_3");
                 }
                 break;
             case 5:
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_4;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_4;
+                    }
+                    Debug.Log("DiceRollFilledIn_4");
                 }
                 break;
             case 6:
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_5;
+                    if (gameObject.tag == "Dice")
+                    {
+                        this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_5;
+                    }
+                    Debug.Log("DiceRollFilledIn_5");
                 }
                 break;
 

@@ -7,7 +7,10 @@ public class MouseInputs : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {/*
+    {
+        
+        /*
+      
         //Left Click
         if(Input.GetMouseButtonDown(0))
         {

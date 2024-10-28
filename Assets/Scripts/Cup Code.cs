@@ -11,6 +11,11 @@ public class CupCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0f, -0.25f, 0f);
+        if (gameObject.tag == "Cup")
+        {
+            //transform.position = new Vector3(0,0,0);
+        }
+
+        //transform.Translate(0f, -0.25f, 0f);
     }
 }
