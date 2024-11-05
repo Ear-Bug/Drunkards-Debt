@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 166fe5beec050944997c60c25d188e63
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DiceRollFilledIn_0: {fileID: -800072205, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  - DiceRollFilledIn_1: {fileID: -1988926579, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  - DiceRollFilledIn_2: {fileID: 425013342, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  - DiceRollFilledIn_3: {fileID: -144371794, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  - DiceRollFilledIn_4: {fileID: -1660818116, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  - DiceRollFilledIn_5: {fileID: -886940062, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
