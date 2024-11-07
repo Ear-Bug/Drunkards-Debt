@@ -480,6 +480,9 @@ MonoBehaviour:
   DiceRollFilledIn_3: {fileID: -144371794, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_4: {fileID: -1660818116, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_5: {fileID: -886940062, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  rollOne: 0
+  rollTwo: 0
+  yourButton: {fileID: 1452047760}
 --- !u!4 &661037008
 Transform:
   m_ObjectHideFlags: 0
@@ -782,6 +785,9 @@ MonoBehaviour:
   DiceRollFilledIn_3: {fileID: -144371794, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_4: {fileID: -1660818116, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_5: {fileID: -886940062, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  rollOne: 0
+  rollTwo: 0
+  yourButton: {fileID: 1452047760}
 --- !u!1 &1452047758
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,12 +936,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166fe5beec050944997c60c25d188e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiceRollFilledIn_0: {fileID: 21300000, guid: f9be17ac364d21b48882de340f9c38b8, type: 2}
+  DiceRollFilledIn_0: {fileID: -800072205, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_1: {fileID: -1988926579, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_2: {fileID: 425013342, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_3: {fileID: -144371794, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_4: {fileID: -1660818116, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_5: {fileID: -886940062, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  rollOne: 0
+  rollTwo: 0
+  yourButton: {fileID: 1452047760}
 --- !u!212 &1452047764
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1294,6 +1303,9 @@ MonoBehaviour:
   DiceRollFilledIn_3: {fileID: -144371794, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_4: {fileID: -1660818116, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
   DiceRollFilledIn_5: {fileID: -886940062, guid: 223a87c19cc8e1f4e8f13588302ea535, type: 3}
+  rollOne: 0
+  rollTwo: 0
+  yourButton: {fileID: 1452047760}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
