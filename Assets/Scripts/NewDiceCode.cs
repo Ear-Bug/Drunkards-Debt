@@ -135,27 +135,27 @@ public class NewDiceCode : MonoBehaviour
     }
     public void rollOnePlusCode()
     {
-        if (rollOne == 0)
+        if (rollOne == 1)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_0;
         }
-        else if (rollOne == 1)
+        else if (rollOne == 2)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_1;
         }
-        else if (rollOne == 2)
+        else if (rollOne == 3)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_2;
         }
-        else if (rollOne == 3)
+        else if (rollOne == 4)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
         }
-        else if (rollOne == 4)
+        else if (rollOne == 5)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_4;
         }
-        else if (rollOne == 5)
+        else if (rollOne == 6)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_5;
         }
@@ -172,27 +172,27 @@ public class NewDiceCode : MonoBehaviour
 
     public void rollTwoPlusCode()
     {
-        if (rollTwo == 0)
+        if (rollTwo == 1)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_0;
         }
-        else if (rollTwo == 1)
+        else if (rollTwo == 2)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_1;
         }
-        else if (rollTwo == 2)
+        else if (rollTwo == 3)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_2;
         }
-        else if (rollTwo == 3)
+        else if (rollTwo == 4)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_3;
         }
-        else if (rollTwo == 4)
+        else if (rollTwo == 5)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_4;
         }
-        else if (rollTwo == 5)
+        else if (rollTwo == 6)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = DiceRollFilledIn_5;
         }
